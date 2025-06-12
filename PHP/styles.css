@@ -1,0 +1,701 @@
+/* styles.css */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    background-image: url('images/vente.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
+
+header {
+    color: rgb(26, 195, 127);
+    padding: 1rem 0;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Categories List Styles */
+.categories-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.category-group {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.category-group h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.category-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.category-link.green-button {
+    background-color: #4CAF50;
+}
+
+.category-link.green-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.category-buttons .category-link {
+    min-width: 150px;
+    text-align: center;
+}
+
+.category-link:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.category-link.active {
+    background-color: #0056b3;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation Styles */
+.main-nav {
+    background-color: #333;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background-color: #237a50;
+}
+
+.user-welcome {
+    color: #4CAF50;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+
+.nav-link.login {
+    background-color: #4CAF50;
+}
+
+.nav-link.register {
+    background-color: #2196F3;
+}
+
+.nav-link.logout {
+    background-color: #f44336;
+}
+
+.clothing-section {
+    color: rgb(242, 242, 242);
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.clothing-section h2 {
+    margin-bottom: 1rem;
+}
+
+.clothing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 0 2rem;
+}
+
+.clothing-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: 1rem;
+}
+
+.clothing-item:hover {
+    transform: translateY(-5px);
+}
+
+.clothing-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+    display: block;
+}
+
+.clothing-item img:hover {
+    transform: scale(1.05);
+}
+
+.clothing-item h3 {
+    color: #333;
+    margin: 1rem;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+}
+
+.clothing-item .price {
+    color: #007bff;
+    font-weight: bold;
+    margin: 1rem;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+}
+
+.command-form {
+    margin: 1rem;
+    padding: 0 1rem;
+}
+
+.clothing-item .button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.commande-form {
+    display: inline-block;
+}
+
+.commande-form input[type="hidden"] {
+    display: none;
+}
+
+.clothing-item a {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.clothing-item a:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for the order section */
+.order-section {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.order-section label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.order-section input,
+.order-section select,
+.order-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.order-section button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+
+.order-section button:hover {
+    background-color: #45a049;
+}
+
+/* Style for Boutique Info Section */
+.info-section {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(23, 23, 23, 0.9);
+}
+
+.info-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.info-section .highlight {
+    font-weight: bold;
+    color: #444;
+}
+
+.info-section .address, .info-section .contact {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.info-section .address p, .info-section .contact p {
+    font-size: 1.1rem;
+    color: #171616;
+}
+
+.info-section .address h3, .info-section .contact h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.info-section .hours {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.info-section .hours h3 {
+    margin-top: 0;
+}
+
+/* Style for Boutique reviews Section */
+.add-review {
+    text-align: center;
+    margin: 20px auto;
+    width: 60%;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.add-review h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.add-review form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-review label {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: white;
+}
+
+.add-review input, 
+.add-review select, 
+.add-review textarea, 
+.add-review button {
+    font-size: 1rem;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-review textarea::placeholder,
+.add-review input::placeholder {
+    color: #aaa;
+}
+
+.add-review button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.add-review button:hover {
+    background-color: #0056b3;
+}
+
+.reviews-list {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.review {
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.conditional-field {
+    display: none;
+}
+
+.conditional-field.active {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-left, .nav-right {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: center;
+    }
+
+    .user-welcome {
+        margin: 0 0 1rem 0;
+    }
+
+    .clothing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .clothing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Product Page Styles */
+.error-message {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.no-products {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 4px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.missing-image {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.missing-image p {
+    color: #f44336;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #757575;
+    margin-right: 0.5rem;
+}
+
+.discounted-price {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.order-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+    background-color: #45a049;
+}
+
+.command-button {
+    background-color: #237a50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.command-button:hover {
+    background-color: #1e6240;
+}
+
+.command-button:active {
+    background-color: #1a5538;
+}
+
+.command-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.command-form input[type="hidden"] {
+    display: none;
+}
+
+/* Orders Page Styles */
+.order-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.order-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.order-info div {
+    padding: 0.5rem;
+}
+
+/* Info Page Styles */
+.info-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.info-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.info-card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.info-card p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.opening-hours {
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.opening-hours h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.opening-hours ul {
+    list-style: none;
+    padding: 0;
+}
+
+.opening-hours li {
+    margin-bottom: 0.5rem;
+    color: #666;
+}

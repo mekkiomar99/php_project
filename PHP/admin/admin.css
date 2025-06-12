@@ -1,0 +1,26 @@
+body { font-family: Arial, sans-serif; background-color: #fff !important; }
+.admin-header { background-color: #333; color: white; padding: 15px; text-align: center; }
+.admin-nav { background-color: #444; padding: 10px; }
+.admin-nav a { color: white; margin: 0 15px; text-decoration: none; }
+.admin-content { padding: 20px; }
+.dashboard-stats { display: flex; flex-wrap: wrap; gap: 20px; }
+.stat-box { background-color: #fff; border: 1px solid #ccc; padding: 20px; border-radius: 5px; flex: 1; min-width: 200px; text-align: center; }
+.stat-box h3 { margin: 0 0 10px; }
+.message { padding: 10px; margin-bottom: 20px; border-radius: 5px; }
+.error { background-color: #f8d7da; color: #721c24; }
+
+/* Styles pour la page de gestion des produits */
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+th { background-color: #444; color: white; }
+a.button { padding: 5px 10px; background-color: #28a745; color: white; text-decoration: none; border-radius: 3px; }
+a.delete { background-color: #dc3545; }
+select { padding: 5px; }
+
+/* Styles pour la page de login admin */
+header { background-color: #333; color: white; padding: 15px; text-align: center; }
+.order-section { max-width: 500px; margin: 20px auto; padding: 20px; background-color: #fff; border: 1px solid #ccc; border-radius: 5px; }
+label { display: block; margin: 10px 0 5px; }
+input { width: 100%; padding: 8px; margin-bottom: 10px; }
+button { padding: 10px 20px; background-color: #28a745; color: white; border: none; border-radius: 5px; }
+footer { text-align: center; padding: 10px; background-color: #333; color: white; }
